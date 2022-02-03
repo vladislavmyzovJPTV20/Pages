@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EEFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/navButton"
+        android:layout_width="174dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="436dp"
+        android:onClick="onClick"
+        android:text="NEXT"
+
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="411dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/android_studio" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="362dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="23dp"
+        android:text="Изучение AndroidStudio я начал в начале января 2022 года. Самым трудным этапом во время моего изучения пока что была настройка программы, которая не хотела корректно работать. Мне понадобился практически месяц для полной настройки AndroidStudio для того, чтобы можно было работать в данной среде."
+        android:textColor="#0C8C13"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/navButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

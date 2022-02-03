@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8EF"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/metanit" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="320dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="46dp"
+        android:text="В изучении AndroidStudio мне сильно помогает сайт metanit.com, на котором я могу найти ответы на интересующие меня вопросы, узнать новые инструменты для написания кода и в целом пополнить свои знания новой информацией с данного сайта. Рекомендую всем использовать этот чудесный сайт :)"
+        android:textColor="#0C49C3"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnNext2"
+        android:layout_width="154dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="129dp"
+        android:onClick="onClick"
+        android:text="NEXT"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

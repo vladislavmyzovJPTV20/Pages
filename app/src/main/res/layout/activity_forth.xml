@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5"
+    tools:context=".ForthActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="420dp"
+        android:layout_height="309dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/filosof" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="385dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="10dp"
+        android:text="Далее я бы хотел выразить своё мнение по поводу того, понадобится ли мне в будущем AndroidStudio или нет. Лично я ещё не решил окончательно, в какой области программирования я буду работать в будущем, поэтому этот вопрос остаётся для меня открытым. Лично мне нравится всё то, что я сейчас изучаю: Java, HTML, CSS, AndroidStudio. Но я точно могу сказать, что с точки зрения приобретения навыков создания мобильных приложений и общего развития в данной области, мне только пойдёт на пользу моё потраченное время в AndroidStudio."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#632CA1"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="154dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="129dp"
+        android:onClick="onClick"
+        android:text="NEXT"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
